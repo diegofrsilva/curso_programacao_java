@@ -27,13 +27,18 @@ public class TestarListar {
 		minhaListaString.add("Valor 4");
 		minhaListaString.add(0, "Valor na posicao 0");
 		minhaListaString.add(3, "Valor na posicao 3");
-		
+
 		int indexOf = minhaListaString.indexOf("Valor 3");
 		System.out.println("Valor 3 esta na posicao: " + indexOf);
-		
+
 		System.out.println("minhaListaString: ");
 		for (String valor : minhaListaString) {
 			System.out.println(valor);
 		}
+
+		List<Integer> inteiros = new ArrayList<>();
+		List<Double> doubles = new ArrayList<>();
+		
+		inteiros.add(10);
 	}
 }

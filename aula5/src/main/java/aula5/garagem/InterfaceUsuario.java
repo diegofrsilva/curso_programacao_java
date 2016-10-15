@@ -1,15 +1,14 @@
 package aula5.garagem;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Scanner;
 
 public class InterfaceUsuario {
 
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
-		Garagem garagem = new Garagem();
-
+		Garagem garagem = new GaragemComMapa();
+		
 		int opcao = menu(scanner);
 		while (opcao != 5) {
 			if (opcao == 1) {
@@ -49,8 +48,7 @@ public class InterfaceUsuario {
 				}
 			} else if (opcao == 4) {
 				System.out.println("Veiculos encontrados: ");
-				List<Veiculo> veiculos = garagem.listar();
-				for (Veiculo veiculo : veiculos) {
+				for (Veiculo veiculo : garagem.listar()) {
 					System.out.println(veiculo);
 				}
 			} else {

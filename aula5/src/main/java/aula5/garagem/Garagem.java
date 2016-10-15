@@ -1,23 +1,15 @@
 package aula5.garagem;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Garagem {
-	
-	public boolean adicionar(Veiculo veiculo) {
-		return false;
-	}
+public interface Garagem {
 
-	public boolean vender(String placa) {
-		return false;
-	}
+	public boolean adicionar(Veiculo veiculo);
 
-	public Veiculo buscar(String placa) {
-		return null;
-	}
+	public boolean vender(String placa);
 
-	public List<Veiculo> listar() {
-		return new ArrayList<>();
-	}
+	public Veiculo buscar(String placa);
+
+	public List<Veiculo> listar();
+
 }
