@@ -7,7 +7,7 @@ public class InterfaceUsuario {
 
 	public static void main(String[] args) throws IOException {
 		Scanner scanner = new Scanner(System.in);
-		Garagem garagem = new GaragemComMapa();
+		Garagem garagem = new GaragemComArquivo();
 		
 		int opcao = menu(scanner);
 		while (opcao != 5) {
