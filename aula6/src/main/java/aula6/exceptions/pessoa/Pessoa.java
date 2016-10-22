@@ -1,9 +1,26 @@
 package aula6.exceptions.pessoa;
 
-public class Pessoa {
+import java.io.Serializable;
 
+/**
+ * 
+ * Classe que representa uma pessoa no meu sistema.
+ * 
+ * @author Diego Farias
+ * 
+ */
+public class Pessoa implements Serializable {
+	/**
+	 * Nome da pessoa
+	 */
 	private String nome;
+	/**
+	 * Sobrenome da pessoa
+	 */
 	private String sobrenome;
+	/**
+	 * Contato da pessoa
+	 */
 	private String contato;
 
 	public String getNome() {
@@ -28,5 +45,11 @@ public class Pessoa {
 
 	public void setContato(String contato) {
 		this.contato = contato;
+	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", sobrenome=" + sobrenome
+				+ ", contato=" + contato + "]";
 	}
 }
